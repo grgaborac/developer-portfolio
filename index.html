@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+    <title>GB | Front End Developer</title>
+</head>
+<body>
+    <div class="nav">
+        <nav class="navbar">
+            <a href="index.html">
+                <div class="logo">
+                    <a href=""><img src="assets/images/logo.png" alt="Grga Borac" class="logo-image"></a>
+                    <h1>Grga Borac</h1>
+                    <h2>Front End Web Developer</h2>
+                </div>
+            </a>
+            <div class="items-list">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/gborac/?originalSubdomain=hr" target="_blank"><i class="icon"><img src="assets/icons/linkedin.png" alt=""></i></a></li>
+                    <li><a href="https://github.com/grgaborac" target="_blank"><i class="icon"><img src="assets/icons/github.png" alt=""></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="main-text">
+            <h1>Hi, <br>I'm <img src="assets/images/logo_text.png" class="text-logo" alt="G">rga, <br> Web Developer</h1>
+        </div>
+        <div class="contact-button">
+            <a href="#contact"><button>Contact me!</button></a>
+        </div>
+        <div class="scroll-down">
+            <h5>scroll down</h5>
+            <i><img src="assets/icons/arrow.png" alt="arrow" class="arrow-icon"></i>
+        </div>
+    </div>
+    <div id="about" class="about">
+        <h1>About me</h1>
+        <p>I am a front-end developer. My desire to learn new things shows how much I am willing to put work and effort into new projects.<br><br>I would say that I am well organized, I quickly find solutions to problems even when I do not know the answers to them.
+            I like to spend my free time doing or watching sports.<br> I am currently in my second year of study at the Polytechnic of Velika Gorica, where I am studying for a bachelor's degree. ing. techn. inf. <br><br>I am interested in offers where I could prove my knowledge and effort, but also learn new technologies.</p>
+    </div>
+    <div id="skills" class="skills">
+        <div class="container-skills-text">
+            <h1>Skills</h1>
+            <p>In the last 9 months, I have been working hard to learn how to program websites. 
+                I used various sources of information, exercises, and tasks.
+                I currently have a good knowledge of front-end development.<br><br>
+                We are more based on learning back-end technologies such as MySQL, Python, and C # in college.<br><br>
+                I also have a basic knowledge of working in WordPress.
+                I focus on working in HTML, CSS, and JavaScript and I would like that to be my primary part of the job. I am familiar with Bootstrap5, SASS, SCSS, and Github technologies.</p>
+        </div>
+        <div class="container-skills-card">
+            <label for="progress">HTML</label>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <label for="progress">CSS</label>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <label for="progress">Javascript</label>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <label for="progress">Bootstrap5</label>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <div class="contact-form">
+            <h1>Contact me</h1>
+            <p>I am interested in possible student positions as a front end web developer. <br>If you have any questions feel free to fill out the form.</p>
+            <form action="email.php" method="post" class="form">
+                <input type="text" placeholder="Name" class="name">
+                <input type="text" placeholder="Email" class="email">
+                <input type="text" placeholder="Subject" class="subject">
+                <textarea name="message" id="message" cols="30" rows="40" max-rows="0" placeholder="Message" class="message"></textarea>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.0273055186735!2d15.901929215533032!3d45.83073557910696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d0e48dc0da4d%3A0x4e0ae2fce580bde5!2sKarasmani%20ul.%208B%2C%2010000%2C%20Zagreb!5e0!3m2!1shr!2shr!4v1652951742217!5m2!1shr!2shr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+</html>
