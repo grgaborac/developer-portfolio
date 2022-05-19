@@ -447,7 +447,7 @@ input, textarea{
 
 @media only screen and (max-width: 600px){
     .logo h1{
-        margin-bottom: 1.1vh;
+        margin-bottom: 1vh;
     }
     .text-logo{
         width: 15vw;
