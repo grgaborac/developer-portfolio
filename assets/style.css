@@ -26,6 +26,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 ol, ul {
 	list-style: none;
@@ -60,7 +62,6 @@ html{
 }
 
 body{
-    width: 100%;
     height: auto;
     font-family: 'Roboto', sans-serif;
 }
@@ -339,7 +340,7 @@ body{
     padding: 10vh 10vw 30vh 10vw;
     background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url(images/projects_background.jpg);
 
-}
+}   
 
 .projects h2, h3{
     color: #ffffff;
@@ -475,6 +476,20 @@ input, textarea{
     .contact-button a{
         visibility: hidden;
     }
+    .social-media ul{
+        visibility: hidden;
+        display: none;
+    }
+    .navbar{
+        padding-bottom: 5vh;
+    }
+    .main{
+        height: auto;
+        padding-top: 5vh;
+    }
+    .map{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px){
@@ -496,6 +511,14 @@ input, textarea{
         height: auto;
     }
     .main{
+        height: auto;
+    }
+    .about{
+        padding: 10vh 0 10vh 5vh;
+        border-bottom: 1px solid var(--text-color);
+    }
+    .projects img{
+        width: 50vw;
         height: auto;
     }
     .about p{
@@ -525,21 +548,77 @@ input, textarea{
         margin-top: 4vh;
     }
     .skills{
-        padding-top: 10vh;
-        padding-bottom: 0vh;
         height: auto;
         background-position: center;
         align-items: flex-start;
     }
     .contact{
         height: auto;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }   
+    .items-list a{
+        font-size: 0.8rem;
     }
 
+    .navbar{
+        flex-direction: column;
+    }
+
+    .items-list ul{
+        flex-direction: column;
+    }
+    .form{
+        text-align: center;
+        width: 10vw;
+        grid-template-columns: 40vw;
+        grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+    }
+    .form input, textarea {
+        width: 70vw;
+    }
+    .name{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    .email{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    .subject{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    .message{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        resize: none;
+        padding-top: 1vh;
+        height: 18vh;
+    }
+    .submit{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 70vw !important;
+    }
 
 }
 
 
 @media only screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .skills{
+        height: auto;
+        background-position: center;
+        align-items: flex-start;
+        padding-top: 5vh;
+    }
     .logo h1{
         width: auto;
         height: 3vh;
@@ -595,13 +674,8 @@ input, textarea{
         justify-content: center;
         align-items: center;
     }
-    .contact-form{
-        width: 100vw;
-        margin: 0;
-        padding: 30vh 10vw 10vh 10vw;
-    }
     .contact{
-        padding: 0;
+        padding: 10vh 10vh 20vh 10vh;
         flex-direction: column;
     }
     .form{
@@ -627,14 +701,3 @@ input, textarea{
 }
 
 
-@media only screen and (min-width: 600px) {
-    .skills{
-        height: 110vh;
-        background-position: center;
-        align-items: flex-start;
-        padding-top: 5vh;
-    }
-    .contact{
-        height: auto;
-    }
-}
